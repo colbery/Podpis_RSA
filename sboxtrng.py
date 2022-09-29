@@ -106,7 +106,6 @@ outputMultiple = []
 
 def trngVector(audio):
     waveFile = wave.open(audio, 'r')
-    print(waveFile.getparams())
     length = waveFile.getnframes()
     forLen = 50000
     # print(length)
