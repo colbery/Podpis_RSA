@@ -15,8 +15,8 @@ path.insert(1, dirname(dirname(abspath(__file__))))
 from scipy.io import wavfile
 
 import datetime
-from Cryptodome.PublicKey import RSA
-from Cryptodome.Cipher import PKCS1_OAEP
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import PKCS1_OAEP
 
 def entropy1(labels, base=None):
   value,counts = np.unique(labels, return_counts=True)
